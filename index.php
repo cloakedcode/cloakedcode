@@ -51,12 +51,13 @@ foreach ($posts as $post)
 {
 	$link = (isset($_GET['id']) && $_GET['id'] == $post->id) ? $post->title : "<a href='?id={$post->id}'>{$post->title}</a>";
 	$date = date('l, \t\h\e jS \of F, Y', $post->date);
+	$body = $post->body();
 echo <<<EOT
 <h2>{$link}</h2>
 <p>
-<small>Written on {$date} by {$post->author}.</small>
+<small>Written on {$date}.</small>
 <br/>
-{$post->body}
+{$body}
 </p>
 <hr/>
 EOT;

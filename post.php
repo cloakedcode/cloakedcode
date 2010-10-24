@@ -54,6 +54,13 @@ class Post extends AN_Model
 
 		return null;
 	}
+
+	function body()
+	{
+		include_once('markdown/markdown.php');
+
+		return Markdown($this->body);
+	}
 }
 
 ?>
