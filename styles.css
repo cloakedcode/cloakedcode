@@ -1,0 +1,43 @@
+body {
+	background-color: #eeeff1;
+}
+
+h1, h2, h3, h4 {
+	color: #612a03;
+}
+
+h2 {
+	margin-bottom: 3px;
+}
+
+p {
+	margin-bottom: 3px;
+}
+
+a {
+	color: #09a505;
+}
+
+#header {
+	text-align: center;
+}
+
+#title a {
+	font-size: 4em;
+	color: #612a03;
+	text-shadow: 0px 0px 2px #000;
+	text-decoration: none;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav li {
+	display: inline;
+}
+
+#content {
+	width: 800px;
+	margin: auto;
+}

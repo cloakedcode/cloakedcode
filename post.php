@@ -61,6 +61,11 @@ class Post extends AN_Model
 
 		return Markdown($this->body);
 	}
+
+	function date()
+	{
+		return date('l, \t\h\e jS \of F, Y', $this->date);
+	}
 }
 
 ?>

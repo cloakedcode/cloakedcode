@@ -1,22 +1,6 @@
-<html>
-<head>
-	<title>Skrat's Blog</title>
-
-	<style>
-		h2 {
-			margin-bottom: 3px;
-		}
-
-		p {
-			margin-top: 3px;
-		}
-	</style>
-</head>
-
-<body>
 <?php
 
-ini_set('date.timezone', 'America/New_York');
+ini_set('date.timezone', 'America/Denver');
 
 /*
  * Start up Acorn
@@ -35,41 +19,20 @@ $time = microtime(true);
 
 if (empty($_GET['id']) === false)
 {
-	$posts = array(Post::postWithId($_GET['id']));
+	Acorn::$vars['post'] = Post::postWithId($_GET['id']);
+	Acorn::renderView('views/post');
+}
+else if (empty($_GET['page']) === false)
+{
+	Acorn::$vars['page'] = Page::pageWithId($_GET['page']);
+	Acorn::renderView('views/page');
 }
 else
 {
-	$posts = Post::posts();
+	Acorn::$vars['posts'] = Post::posts();
+	Acorn::renderView('views/posts');
 }
 
-/*
- * Loop through the post(s) and diplay 'em
- *
- */
-
-foreach ($posts as $post)
-{
-	$link = (isset($_GET['id']) && $_GET['id'] == $post->id) ? $post->title : "<a href='?id={$post->id}'>{$post->title}</a>";
-	$date = date('l, \t\h\e jS \of F, Y', $post->date);
-	$body = $post->body();
-echo <<<EOT
-<h2>{$link}</h2>
-<p>
-<small>Written on {$date}.</small>
-<br/>
-{$body}
-</p>
-<hr/>
-EOT;
-}
-
-if (isset($_GET['id']))
-{
-	echo "<a href='index.php'>Go back to full listing</a>";
-}
-
-echo '<!--- Page took: '.(microtime(true) - $time).'-->';
+echo '<!--- Page took: '.(microtime(true) - $time)."-->\n";
 
 ?>
-</body>
-</html>
