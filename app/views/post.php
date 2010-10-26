@@ -2,6 +2,8 @@
 <div class='date'>Written on <?= $post->date()?>.</div>
 <?= $post->body() ?>
 
+<hr/>
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   var disqus_identifier = '<?= $post->id ?>';
@@ -12,4 +14,3 @@
   })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=codecabin">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
