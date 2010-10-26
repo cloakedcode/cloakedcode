@@ -2,12 +2,14 @@
 
 ## What is this?
 
-The code/content in this repo is everything that it takes to run my site. All content is contained in static files. The posts are stored in [posts](/skrat19/codecabin/tree/master/posts/) and the pages are in [pages](/skrat19/codecabin/tree/master/pages/).
+The code/content in this repo is everything that it takes to run my site. All content is contained in static files. The posts are stored in the [posts](/skrat19/codecabin/tree/master/posts/) directory and the pages in [pages](/skrat19/codecabin/tree/master/pages/).
 
 ## Why not use a pre-built CMS?
 
-Where is the fun in that? Other than fun:
+Where is the fun in that? Other than the pure fun of creating my own "CMS":
 
- * It's so fast it's almost like riding a cheetah.
+ * This is so fast it's almost like riding a cheetah.
  * The entire site can be copied/backed-up in a jiffy.
  * If someone wants to read the posts offline, they just have to download [them](/skrat19/codecabin/tree/master/posts/).
+ * It's less than 300 lines of code (including the CSS but excluding [Acorn](/skrat19/codecabin/tree/master/app/acorn.php).
+ * It does exactly what I want and no more.
