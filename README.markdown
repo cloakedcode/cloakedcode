@@ -1,0 +1,13 @@
+# Code Cabin - The code/content for my site
+
+## What is this?
+
+The code/content in this repo is everything that it takes to run my site. All content is contained in static files. The posts are stored in [posts](/skrat19/codecabin/tree/master/posts/) and the pages are in [pages](/skrat19/codecabin/tree/master/pages/).
+
+## Why not use a pre-built CMS?
+
+Where is the fun in that? Other than fun:
+
+ * It's so fast it's almost like riding a cheetah.
+ * The entire site can be copied/backed-up in a jiffy.
+ * If someone wants to read the posts offline, they just have to download [them](/skrat19/codecabin/tree/master/posts/).
