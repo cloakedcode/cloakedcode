@@ -15,9 +15,13 @@
 		</div>
 		<div id='nav'>
 			<ul>
-				<li><a href='?page=about'>About</a></li>
+				<? $last = count($menu) - 1 ?>
+				<? foreach ($menu as $i => $item) : ?>
+				<li><a href='?page=<?= $item['id'] ?>'><?= $item['name'] ?></a></li>
+				<? if ($i !== $last) : ?>
 				|
-				<li><a href='?page=projects'>Projects</a></li>
+				<? endif ?>
+				<? endforeach ?>
 			</ul>
 		</div>
 	</div>

@@ -14,6 +14,8 @@ Acorn::$include_paths[] = 'app';
 
 $time = microtime(true);
 
+Acorn::$vars['menu'] = Page::menuItems();
+
 /*
  * Get the post(s)
  *

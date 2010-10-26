@@ -2,6 +2,21 @@
 
 class Page extends AN_Model
 {
+	static function menuItems()
+	{
+		$items = array();
+
+		foreach (glob('pages/*.html') as $file)
+		{
+			$id = substr(basename($file), 0, -5);
+			$name = ucwords(str_ireplace('-', ' ', $id));
+
+			$items[] = array('id' => $id, 'name' => $name);
+		}
+
+		return $items;
+	}
+
 	static function pages()
 	{
 		$pages = array();
