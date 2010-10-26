@@ -47,7 +47,7 @@ class Page extends AN_Model
 		$matches = array();
 		if (preg_match('/([A-Z|a-z|\-]*?)\.html$/', $filename, $matches))
 		{
-			$file_contents = explode("\n\n", file_get_contents("./pages/{$filename}"));
+			$file_contents = explode("\n\n", file_get_contents("./pages/{$filename}"), 2);
 			$data = array(
 					'id' => $matches[1],
 					'title' => ucwords(str_ireplace('-', ' ', $matches[1])),

@@ -58,6 +58,10 @@ hr {
 	margin: auto;
 }
 
+#footer {
+	font-size: 80%;
+}
+
 .date {
 	font-size: 80%;
 	margin-bottom: 10px;
