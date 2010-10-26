@@ -11,7 +11,7 @@ class Page extends AN_Model
 			$id = substr(basename($file), 0, -5);
 			$name = ucwords(str_ireplace('-', ' ', $id));
 
-			$items[] = array('id' => $id, 'name' => $name);
+			$items[] = array('id' => $id.'.html', 'name' => $name);
 		}
 
 		return $items;

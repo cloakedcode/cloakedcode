@@ -34,7 +34,7 @@ class Post extends AN_Model
 		{
 			$file_contents = explode("\n\n", file_get_contents("./posts/{$filename}"));
 			$data = array(
-					'id' => $matches[1].'-'.$matches[2],
+					'id' => $matches[1].'-'.$matches[2].'.html',
 					'date' => strtotime($matches[1]),
 					'title' => ucwords(str_ireplace('-', ' ', $matches[2])),
 					'body' => $file_contents[1]

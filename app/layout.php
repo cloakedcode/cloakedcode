@@ -5,7 +5,7 @@
 	<title>Code Cabin</title>
 
 	<link href='app/styles.css' type='text/css' rel='stylesheet' />
-	<link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic' type='text/css' rel='stylesheet' />
+	<link href='http://fonts.googleapis.com/css?family=Cantarell&subset=latin' type='text/css' rel='stylesheet' />
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 			<ul>
 				<? $last = count($menu) - 1 ?>
 				<? foreach ($menu as $i => $item) : ?>
-				<li><a href='?page=<?= $item['id'] ?>'><?= $item['name'] ?></a></li>
+				<li><a href='<?= $item['id'] ?>'><?= $item['name'] ?></a></li>
 				<? if ($i !== $last) : ?>
 				|
 				<? endif ?>
@@ -29,6 +29,7 @@
 	<div id='content'>
 		<?= Acorn::$view_contents ?>
 	</div>
-
+	
+	<a href="http://github.com/skrat19"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub" /></a>
 </body>
 </html>

@@ -4,8 +4,8 @@
 }
 
 body {
-	background-color: #eeeff1;
-	font-family: 'OFL Sorts Mill Goudy', 'OFL Sorts Mill Goudy TT', serif;
+	background-color: #f2f4eb;
+	font-family: 'Cantarell', arial, serif;
 }
 
 h1, h2, h3, h4 {
@@ -28,6 +28,7 @@ hr {
 }
 
 #header {
+	padding-bottom: 10px;
 	text-align: center;
 }
 
@@ -44,6 +45,7 @@ hr {
 }
 
 #nav ul {
+	margin-top: 10px;
 	list-style: none;
 }
 
