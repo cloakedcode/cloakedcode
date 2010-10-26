@@ -1,13 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #eeeff1;
+	font-family: 'OFL Sorts Mill Goudy', 'OFL Sorts Mill Goudy TT', serif;
 }
 
 h1, h2, h3, h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
 	color: #612a03;
-}
-
-h2 {
-	margin-bottom: 3px;
 }
 
 p {
@@ -18,12 +22,22 @@ a {
 	color: #09a505;
 }
 
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
 #header {
 	text-align: center;
 }
 
+#title {
+	margin-top: 10px;
+	line-height: 65px;
+	font-size: 65px;
+}
+
 #title a {
-	font-size: 4em;
 	color: #612a03;
 	text-shadow: 0px 0px 2px #000;
 	text-decoration: none;
@@ -40,4 +54,9 @@ a {
 #content {
 	width: 800px;
 	margin: auto;
+}
+
+.date {
+	font-size: 80%;
+	margin-bottom: 10px;
 }

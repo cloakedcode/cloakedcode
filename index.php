@@ -8,7 +8,9 @@ ini_set('date.timezone', 'America/Denver');
  */
 
 define('ROOT_DIR', '.');
-require('acorn.php');
+require('app/acorn.php');
+
+Acorn::$include_paths[] = 'app';
 
 $time = microtime(true);
 

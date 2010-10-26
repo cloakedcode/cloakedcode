@@ -11,8 +11,7 @@ foreach ($posts as $post)
 	$body = $post->body();
 echo <<<EOT
 <h2><a href='?id={$post->id}'>{$post->title}</a></h2>
-<small>Written on {$date}.</small>
-<br/>
+<div class='date'>Written on {$date}.</div>
 {$body}
 <hr/>
 EOT;

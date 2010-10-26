@@ -4,7 +4,8 @@
 <head>
 	<title>Code Cabin</title>
 
-	<link href='styles.css' type='text/css' rel='stylesheet' />
+	<link href='app/styles.css' type='text/css' rel='stylesheet' />
+	<link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic' type='text/css' rel='stylesheet' />
 </head>
 
 <body>
