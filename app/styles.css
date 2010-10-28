@@ -6,6 +6,7 @@
 body {
 	background-color: #f2f4eb;
 	font-family: 'Cantarell', arial, serif;
+	font-size: 14px;
 }
 
 h1, h2, h3, h4 {
@@ -19,7 +20,14 @@ p {
 }
 
 a {
+	text-decoration: none;
 	color: #09a505;
+	padding: 1px;
+}
+
+a:hover {
+	background-color: #09a505;
+	color: #fff;
 }
 
 hr {
@@ -34,14 +42,17 @@ hr {
 
 #title {
 	margin-top: 10px;
-	line-height: 65px;
-	font-size: 65px;
+	line-height: 55px;
+	font-size: 55px;
 }
 
 #title a {
 	color: #612a03;
 	text-shadow: 0px 0px 2px #000;
-	text-decoration: none;
+}
+
+#title a:hover {
+	background-color: #f2f4eb;
 }
 
 #nav ul {
@@ -59,10 +70,15 @@ hr {
 }
 
 #footer {
-	font-size: 80%;
+	font-size: 75%;
 }
 
 .date {
 	font-size: 80%;
 	margin-bottom: 10px;
+}
+
+.post-title {
+	font-size: 170%;
+	margin: 0px;
 }
