@@ -30,13 +30,12 @@
 
 	<div id='content'>
 		<?= Acorn::$view_contents ?>
-	
-		<div id='footer'>
-			<hr/>
-			<p>
-				Copyright &copy; 2010 Alan Smith.
-			</p>
-		</div>
+	</div>
+
+	<div id='footer'>
+		<p>
+			Copyright &copy; 2010 Alan Smith.
+		</p>
 	</div>
 	<a href="http://github.com/skrat19"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub" /></a>
 </body>

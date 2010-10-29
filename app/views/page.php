@@ -1,1 +1,1 @@
-<div class='post-content'><?= $page->body() ?></div>
+<div class='page-content'><?= $page->body() ?></div>
