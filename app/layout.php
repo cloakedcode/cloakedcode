@@ -2,7 +2,9 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Code Cabin</title>
+	<title>
+		Code Cabin<? if (isset($title)) : ?> | <?= $title ?> <? endif ?>
+	</title>
 
 	<link href='app/styles.css' type='text/css' rel='stylesheet' />
 	<link href='http://fonts.googleapis.com/css?family=Cantarell&subset=latin' type='text/css' rel='stylesheet' />
@@ -17,7 +19,7 @@
 			<ul>
 				<? $last = count($menu) - 1 ?>
 				<? foreach ($menu as $i => $item) : ?>
-				<li><a href='<?= $item['id'] ?>'><?= $item['name'] ?></a></li>
+				<li><a href='<?= $item['id'] ?>'><?= $item['title'] ?></a></li>
 				<? if ($i !== $last) : ?>
 				|
 				<? endif ?>

@@ -23,12 +23,18 @@ Acorn::$vars['menu'] = Page::menuItems();
 
 if (empty($_GET['id']) === false)
 {
-	Acorn::$vars['post'] = Post::postWithId($_GET['id']);
+	$p = Post::postWithId($_GET['id']);
+
+	Acorn::$vars['post'] = $p;
+	Acorn::$vars['title'] = $p->title;
 	Acorn::renderView('views/post');
 }
 else if (empty($_GET['page']) === false)
 {
-	Acorn::$vars['page'] = Page::pageWithId($_GET['page']);
+	$p = Page::pageWithId($_GET['page']);
+
+	Acorn::$vars['page'] = $p;
+	Acorn::$vars['title'] = $p->title;
 	Acorn::renderView('views/page');
 }
 else

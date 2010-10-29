@@ -9,9 +9,14 @@ class Page extends AN_Model
 		foreach (glob('pages/*.html') as $file)
 		{
 			$id = substr(basename($file), 0, -5);
-			$name = ucwords(str_ireplace('-', ' ', $id));
+			$title = ucwords(str_ireplace('-', ' ', $id));
 
-			$items[] = array('id' => $id.'.html', 'name' => $name);
+			if (preg_match('/title: ?(.*)/', file_get_contents($file), $matches))
+			{
+				$title = $matches[1];
+			}
+
+			$items[] = array('id' => $id.'.html', 'title' => $title);
 		}
 
 		return $items;
