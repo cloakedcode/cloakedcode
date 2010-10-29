@@ -1,6 +1,7 @@
 <h2 class='post-title'><?= $post->title ?></h2>
-<div class='date'>Written on <?= $post->date() ?>.</div>
-<?= $post->body() ?>
+<span class='date'>(<?= $post->date() ?>)</span>
+
+<div class='post-content'><?= $post->body() ?></div>
 
 <hr/>
 

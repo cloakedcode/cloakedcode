@@ -5,14 +5,15 @@
 
 body {
 	background-color: #f2f4eb;
-	font-family: 'Cantarell', arial, serif;
-	font-size: 14px;
+	font-family: Georgia, sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
 }
 
 h1, h2, h3, h4 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	color: #612a03;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-family: Helvetica, arial, serif;
 }
 
 p {
@@ -36,12 +37,13 @@ hr {
 }
 
 #header {
-	padding-bottom: 10px;
+	padding: 25px 0px 25px 0px;
 	text-align: center;
+	border-bottom: 1px dashed lightgray;
+	font-family: Helvetica, arial, serif;
 }
 
 #title {
-	margin-top: 10px;
 	line-height: 55px;
 	font-size: 55px;
 }
@@ -67,6 +69,7 @@ hr {
 #content {
 	width: 800px;
 	margin: auto;
+	padding-top: 30px;
 }
 
 #footer {
@@ -75,10 +78,15 @@ hr {
 
 .date {
 	font-size: 80%;
-	margin-bottom: 10px;
+	margin-bottom: auto;
 }
 
 .post-title {
 	font-size: 170%;
-	margin: 0px;
+	display: inline;
+	margin-right: 8px;
+}
+
+.post-content {
+	margin-top: 15px;
 }
