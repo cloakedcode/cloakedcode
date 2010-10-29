@@ -14,7 +14,7 @@ class Post extends AN_Model
 			}
 		}
 
-		return $posts;
+		return array_reverse($posts);
 	}
 
 	static function postWithId($id)
