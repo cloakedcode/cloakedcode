@@ -1,5 +1,5 @@
-<h2 class='post-title'><?= $post->title ?></h2>
-<span class='date'>(<?= $post->date() ?>)</span>
+<h1 class='post-title'><?= $post->title ?></h1>
+<div class='date'>Published on <?= $post->date() ?>.</div>
 
 <div class='post-content'><?= $post->body() ?></div>
 
