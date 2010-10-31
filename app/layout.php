@@ -7,7 +7,8 @@
 	</title>
 
 	<link href='app/styles.css' type='text/css' rel='stylesheet' />
-	<link href='http://fonts.googleapis.com/css?family=Cantarell&subset=latin' type='text/css' rel='stylesheet' />
+	
+	<link rel="alternate" type="application/rss+xml" href="rss.php" title="Code Cabin RSS Feed" />
 </head>
 
 <body>
