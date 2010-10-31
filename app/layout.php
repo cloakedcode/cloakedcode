@@ -8,7 +8,7 @@
 
 	<link href='app/styles.css' type='text/css' rel='stylesheet' />
 	
-	<link rel="alternate" type="application/rss+xml" href="rss.php" title="Code Cabin RSS Feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/CodeCabin" title="Code Cabin RSS Feed" />
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 
 	<div id='footer'>
 		<p>
-			Copyright &copy; 2010 Alan Smith.
+			Copyright &copy; 2010 Alan Smith. <a href="http://feeds.feedburner.com/CodeCabin" title="Subscribe to my RSS feed!"><img src="feed.png" /></a>
 		</p>
 	</div>
 	<a href="http://github.com/skrat19"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub" /></a>
