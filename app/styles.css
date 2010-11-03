@@ -20,7 +20,7 @@ h2, h3, h4 {
 }
 
 p {
-	margin-bottom: 3px;
+	margin-bottom: 1.3em;
 }
 
 a {
@@ -37,6 +37,16 @@ a:hover {
 hr {
 	margin-top: 15px;
 	margin-bottom: 25px;
+}
+
+ul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+li {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #header {
