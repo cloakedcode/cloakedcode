@@ -21,7 +21,7 @@ header("Content-Type: application/xml");
 echo "<?xml version='1.0' ?>\n" ?>
 <rss version="2.0">
 	<channel>
-		<title>Code Cabin RSS Feed</title>
+		<title>Cloaked Code RSS Feed</title>
 		<link><?php echo $home ?></link>
 		<description></description>
 		<language>en-us</language>

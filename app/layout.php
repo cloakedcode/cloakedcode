@@ -3,18 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>
-		Code Cabin<? if (isset($title)) : ?> | <?= $title ?> <? endif ?>
+		Cloaked Code<? if (isset($title)) : ?> | <?= $title ?> <? endif ?>
 	</title>
 
 	<link href='app/styles.css' type='text/css' rel='stylesheet' />
 	
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/CodeCabin" title="Code Cabin RSS Feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/CloakedCode" title="Cloaked Code RSS Feed" />
 </head>
 
 <body>
 	<div id='header'>
 		<div id='title'>
-			<a href='index.php'>Code Cabin</a>
+			<a href='index.php'>Cloaked Code</a>
 		</div>
 		<div id='nav'>
 			<ul>
@@ -35,9 +35,9 @@
 
 	<div id='footer'>
 		<p>
-			Copyright &copy; 2010 Alan Smith. <a href="http://feeds.feedburner.com/CodeCabin" title="Subscribe to my RSS feed!"><img src="feed.png" /></a>
+			Copyright &copy; 2010 Cloaked Code. <a href="http://feeds.feedburner.com/CloakedCode" title="Subscribe to my RSS feed!"><img src="feed.png" /></a>
 		</p>
 	</div>
-	<a href="http://github.com/skrat19"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub" /></a>
+    <a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub"></a>
 </body>
 </html>
