@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<channel>
+				<title>SwingFish Changelog</title>
+				<link>http://cloakedcode.com/apps/swingfish/appcast.xml</link>
+				<description>A new version of SwingFish is available!</description>
+				<language>en</language>
+
+				<item>
+						<title>Version 1.0.1 (1 new feature)</title>
+						<sparkle:releaseNotesLink>
+						http://cloakedcode.com/apps/swingfish/1.0.1.html
+						</sparkle:releaseNotesLink>
+						<pubDate>Sat, 12 Feb 2011 19:30:11 +0000</pubDate>
+						<enclosure url="http://cloakedcode.com/apps/swingfish/swingfish_latest.zip"
+								   sparkle:version="1.0.1"
+								   sparkle:dsaSignature="MC0CFE7yL4QDAoKf9nSMYoDW56mwwo2RAhUA1LqzI8uO7imVjmuZn7n75e47OQ0="
+								   length="440363"
+								   type="application/octet-stream" />
+				</item>
+		</channel>
+</rss>

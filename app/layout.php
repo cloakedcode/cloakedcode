@@ -14,8 +14,8 @@
 
 <body>
 	<div id='header'>
-		<div id='title'>
-			<a href='index.php'>Cloaked Code</a>
+		<div id='logo'>
+			<a href='index.php'><img src='/imgs/logo.png' alt='Cloaked Code' /></a>
 		</div>
 		<div id='nav'>
 			<ul>
@@ -39,7 +39,7 @@
 			Copyright &copy; 2010 Cloaked Code. <a href="http://feeds.feedburner.com/CloakedCode" title="Subscribe to my RSS feed!"><img src="feed.png" /></a>
 		</p>
 	</div>
-    <a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub"></a>
+    <!--<a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/abad93f42020b733148435e2cd92ce15c542d320?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_green_007200.png&path=" alt="Fork me on GitHub"></a>-->
 
 	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
 	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
@@ -49,5 +49,16 @@
 			});
 	</script>
 
+	<script type="text/javascript">
+		var pkBaseURL = (("https:" == document.location.protocol) ? "https://cloakedcode.com/piwik/" : "http://cloakedcode.com/piwik/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			try {
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+			piwikTracker.trackPageView();
+		piwikTracker.enableLinkTracking();
+		} catch( err ) {}
+	</script><noscript><p><img src="http://cloakedcode.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+	
 </body>
 </html>

@@ -5,16 +5,21 @@
 }
 
 body {
-	background-color: #1E1D1F;
-	color: #BFBFBF;
+	background-color: #231F21;
+	color: #F1F1F1;
 	font-family: Georgia, sans-serif;
 	font-size: 16px;
 	line-height: 1.3em;
 }
 
 h1, h2, h3, h4 {
+	color: #84C145;
 	font-family: Helvetica, arial, serif;
 	margin-bottom: 8px;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+	color: #84C145;
 }
 
 h2, h3, h4 {
@@ -28,13 +33,12 @@ p {
 
 a {
 	text-decoration: none;
-	color: #6A009F;
+	color: #9DCF67;
 	padding: 1px;
 }
 
 a:hover {
-	background-color: #6A009F;
-	color: #fff;
+	color: #7ECF26;
 }
 
 hr {
@@ -53,28 +57,28 @@ li {
 }
 
 #header {
-	padding: 25px 0px 25px 0px;
-	text-align: center;
+	padding: 15px 0px;
 	border-bottom: 1px dashed gray;
 	font-family: Helvetica, arial, serif;
 }
 
-#title {
+#logo {
+	float: left;
+    margin-left: 20px;
 	line-height: 55px;
 	font-size: 55px;
 }
 
-#title a {
-	color: #4A006F;
+#logo a {
 	text-shadow: 0px 0px 2px #000;
 }
 
-#title a:hover {
-	background-color: #1E1D1F;
+#nav {
+    /*text-align: center;*/
+	padding: 40px 0px 40px 300px;
 }
 
 #nav ul {
-	margin-top: 10px;
 	list-style: none;
 }
 

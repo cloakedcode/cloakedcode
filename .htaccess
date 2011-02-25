@@ -1,8 +1,12 @@
+php_value date.timezone America/Los_Angeles
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule ^(\d{4}-\d{0,2}-\d{0,2}-.*)\.html?$ index.php?id=$1 [QSA]
-	RewriteRule ^(.*)\.html$ index.php?page=$1 [QSA]
+	RewriteRule ^(\d{4}-\d{0,2}-\d{0,2}-.*)\.html?$ index.php?id=$1 [QSA,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)\.html$ index.php?page=$1 [QSA,L]
 </IfModule>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<channel>
+				<title>RadioBox Changelog</title>
+				<link>http://cloakedcode.com/apps/radiobox/appcast.xml</link>
+				<description>A new version of RadioBox is available!</description>
+				<language>en</language>
+
+				<item>
+						<title>Version 1.0.1 (1 bug fix)</title>
+						<sparkle:releaseNotesLink>
+						http://cloakedcode.com/apps/radiobox/1.0.1.html
+						</sparkle:releaseNotesLink>
+						<pubDate>Thu, 24 Feb 2011 17:42:32 +0000</pubDate>
+						<enclosure url="http://cloakedcode.com/apps/radiobox/radiobox_latest.zip"
+								   sparkle:version="1.0.1"
+								   sparkle:dsaSignature="MC0CFE7yL4QDAoKf9nSMYoDW56mwwo2RAhUA1LqzI8uO7imVjmuZn7n75e47OQ0="
+								   length="440363"
+								   type="application/octet-stream" />
+				</item>
+		</channel>
+</rss>
