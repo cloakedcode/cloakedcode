@@ -31,6 +31,15 @@ p {
 	margin-bottom: 1.3em;
 }
 
+blockquote {
+	padding: 15px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	font-style: italic;
+	background-color: #1F1D1E;
+	border: 1px gray solid;
+}
+
 a {
 	text-decoration: none;
 	color: #9DCF67;
