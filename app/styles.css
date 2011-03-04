@@ -102,7 +102,7 @@ li {
 }
 
 #content {
-	width: 500px;
+	width: 600px;
 	margin: auto;
 	padding-top: 30px;
 }
@@ -120,6 +120,14 @@ li {
 	margin-top: 6px;
 	margin-left: 1px;
 	color: gray;
+}
+
+.post {
+	margin-bottom: 25px;
+}
+
+.post .title {
+	display: inline;
 }
 
 .post-content {

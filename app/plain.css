@@ -37,8 +37,8 @@ a {
 }
 
 hr {
-	margin-top: 30px;
-	margin-bottom: 60px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 ul {
@@ -87,9 +87,17 @@ li {
 	padding: 5px;
 }
 
+.post {
+	margin-bottom: 25px;
+}
+
 .date {
 	margin: 6px 0px 30px 2px;
 	font-style: italic;
+}
+
+.post .title {
+	display: inline;
 }
 
 .post-content {

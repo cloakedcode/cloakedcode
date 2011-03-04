@@ -64,7 +64,7 @@ class Post extends AN_Model
 
 	function date()
 	{
-		return date('m/d/Y', $this->date);
+		return date('F j, Y', $this->date);
 	}
 }
 
