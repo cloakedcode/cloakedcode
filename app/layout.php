@@ -1,3 +1,4 @@
+<?php $plain = (isset($_COOKIE['theme']) && $_COOKIE['theme'] === 'plain') ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,7 +7,7 @@
 		Cloaked Code<? if (isset($title)) : ?> | <?= $title ?> <? endif ?>
 	</title>
 
-	<link href='app/styles.css' type='text/css' rel='stylesheet' />
+	<link href='app/<?php echo ($plain) ? 'plain' : 'styles' ?>.css' type='text/css' rel='stylesheet' />
 	<link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 	
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/CloakedCode" title="Cloaked Code RSS Feed" />
@@ -15,7 +16,7 @@
 <body>
 	<div id='header'>
 		<div id='logo'>
-			<a href='index.php'><img src='/imgs/logo.png' alt='Cloaked Code' /></a>
+			<a href='index.php'><img src='/imgs/<?php echo ($plain) ? 'black-logo' : 'logo' ?>.png' alt='Cloaked Code' /></a>
 		</div>
 		<div id='nav'>
 			<ul>
@@ -27,6 +28,11 @@
 				<? endif ?>
 				<? endforeach ?>
 			</ul>
+		</div>
+		<div id='theme'>
+			<a href='#' onclick="document.cookie = 'theme=plain'; document.location.reload();">Plain</a>
+			|
+			<a href='#' onclick="document.cookie = 'theme=dark'; document.location.reload();">Dark</a>
 		</div>
 	</div>
 
