@@ -1,4 +1,7 @@
 php_value date.timezone America/Los_Angeles
+
+Options -Indexes
+
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
