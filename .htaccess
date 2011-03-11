@@ -15,9 +15,5 @@ Options -Indexes
 
 	RewriteCond %{HTTP_REFERER} !^http://(.+\.)?cloakedcode\.com/ [NC]
 	RewriteCond %{HTTP_REFERER} !^$
-	RewriteRule .*\.(jpe?g|gif|bmp|png|wav|ogg)$ http://img148.imageshack.us/img148/237/hotlinkp.gif [L]
-
-	RewriteCond %{HTTP_REFERER} !^http://(.+\.)?cloakedcode\.com/ [NC]
-	RewriteCond %{HTTP_REFERER} !^$
-	RewriteRule ^/piwik http://img148.imageshack.us/img148/237/hotlinkp.gif [L]
+	RewriteRule .*\.(jpe?g|gif|bmp|png)$ http://img148.imageshack.us/img148/237/hotlinkp.gif [QSA,L]
 </IfModule>
