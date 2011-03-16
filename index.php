@@ -25,17 +25,33 @@ if (empty($_GET['id']) === false)
 {
 	$p = Post::postWithId($_GET['id']);
 
-	Acorn::$vars['post'] = $p;
-	Acorn::$vars['title'] = $p->title;
-	Acorn::renderView('views/post');
+	if (empty($p))
+	{
+		Acorn::error(404);
+		Acorn::renderView('views/notfound');
+	}
+	else
+	{
+		Acorn::$vars['post'] = $p;
+		Acorn::$vars['title'] = $p->title;
+		Acorn::renderView('views/post');
+	}
 }
 else if (empty($_GET['page']) === false)
 {
 	$p = Page::pageWithId($_GET['page']);
 
-	Acorn::$vars['page'] = $p;
-	Acorn::$vars['title'] = $p->title;
-	Acorn::renderView('views/page');
+	if (empty($p))
+	{
+		Acorn::error(404);
+		Acorn::renderView('views/notfound');
+	}
+	else
+	{
+		Acorn::$vars['page'] = $p;
+		Acorn::$vars['title'] = $p->title;
+		Acorn::renderView('views/page');
+	}
 }
 else
 {
