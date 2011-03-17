@@ -15,17 +15,14 @@ Here is the post-commit hook. (Note: it excludes the <code>build</code> director
 
 PWD=`pwd`
 DIR=`basename "$PWD"`
-FILE="$DIR.tar.gz"
+DROPBOX="/path/to/my/Dropbox/$DIR.tar.gz"
 
 # move above the git repo
 cd "$PWD/.."
 
 # tar and zip it
 tar -cf "$DIR.tar" --exclude "$DIR/build" "$DIR"
-gzip -f "$DIR.tar" > $FILE
-
-# back it up
-mv -f $FILE "/path/to/my/Dropbox/$FILE"
+gzip -f "$DIR.tar" > $DROPBOX
 </pre>
 
 <script type="text/javascript" src="/js/syntax/shCore.js"></script>
