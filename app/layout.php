@@ -9,6 +9,8 @@
 
 	<link href='app/<?php echo ($plain) ? 'plain' : 'styles' ?>.css' type='text/css' rel='stylesheet' />
 	<link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<link href="/css/syntax/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="/css/syntax/shThemeFadeToGrey.css" rel="stylesheet" type="text/css" />
 	
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/CloakedCode" title="Cloaked Code RSS Feed" />
 </head>
@@ -49,11 +51,12 @@
 
 	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
 	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
 	<script type="text/javascript">
 			$(document).ready(function() {
 				$('a.fancybox').fancybox({ 'titlePosition' : 'over', 'transitionIn' : 'fade' });
 			});
-	</script>
+ 	</script>
 
 	<script type="text/javascript">
 		var pkBaseURL = '/tracker/'; //(("https:" == document.location.protocol) ? "/piwik/" : "/piwik/");

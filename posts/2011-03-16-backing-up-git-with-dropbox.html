@@ -1,0 +1,36 @@
+title: Backing up git with Dropbox
+tags: git, backup, dropbox
+
+Three days ago I was trying to force the deletion of some files by using <code>rm -rf</code>. I pressed enter and it spit out some errors mentioning directories a level above where I was. I instantly pressed Ctrl-c, but it was too late. Some files were already gone. My code! In despair I downloaded file recovery programs but neither of them found my files. I settled on rewriting the code from archives I had put in Dropbox, and now, after two days of coding, I'm back to where I was. (I have to admit, I think it's more elegant now than it was.)
+
+This unpleasant happening prompted me to take extreme measures to make sure I don't lose code again. I did two things:
+
+1. Setup a FreeBSD server to push my git repositories to.
+2. Added a post-commit hook to archive git repositories and put them in Dropbox.
+
+Here is the post-commit hook. (Note: it excludes the <code>build</code> directory from the archive.)
+
+<pre class='brush: shell'>
+#!/bin/sh
+
+PWD=`pwd`
+DIR=`basename "$PWD"`
+FILE="$DIR.tar.gz"
+
+# move above the git repo
+cd "$PWD/.."
+
+# tar and zip it
+tar -cf "$DIR.tar" --exclude "$DIR/build" "$DIR"
+gzip -f "$DIR.tar" > $FILE
+
+# back it up
+mv -f $FILE "/path/to/my/Dropbox/$FILE"
+</pre>
+
+<script type="text/javascript" src="/js/syntax/shCore.js"></script>
+<script type="text/javascript" src="/js/syntax/shBrushBash.js"></script>
+
+<script type="text/javascript">
+		SyntaxHighlighter.all();
+</script>

@@ -55,9 +55,10 @@ hr {
 	margin-bottom: 25px;
 }
 
-ul {
-	margin-top: 15px;
-	margin-bottom: 15px;
+ul, ol {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 35px;
 }
 
 li {
