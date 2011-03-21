@@ -1,4 +1,4 @@
-<?
+<?php
 // This is where all the server-side configuration happens.
 // Location of the real appcast file
 // $Id: profileConfig.php 17 2006-06-13 18:54:00Z schwa $
