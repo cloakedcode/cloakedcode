@@ -1,3 +1,4 @@
 dandelion.yml
 apps/*/*.php
+apps/*/*.zip
 cache/
