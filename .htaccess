@@ -1,4 +1,5 @@
 php_value date.timezone America/Los_Angeles
+php_value error_reporting "E_ALL & ~E_NOTICE"
 
 Options -Indexes
 
