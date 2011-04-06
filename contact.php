@@ -28,7 +28,7 @@ if (isset($_POST['send']))
 	$subject = html2txt($_POST['subject']);
 	$msg = html2txt($_POST['message']);
 
-	mail('alan@cloakedcode.com', $subject, $msg, "From: {$email}]\r\n");
+	mail('alan@cloakedcode.com', $subject, $msg, "From: {$email}\r\n");
 
 	Acorn::renderView('views/sent');
 }
