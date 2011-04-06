@@ -1,0 +1,21 @@
+title: Making User Input Safe
+tags: ambitiouslemon, webapp, validate, user, input, code, snippet, php, html
+
+As the developer behind [AmbitiousLemon](http://ambitiouslemon.com)'s user/hosting request management backend, I've been fixing bugs and implementing features. A couple days ago, I came across a terrible discovery. I wrote the AL code years ago and was too inexperienced to carefully sanitize user input. I validated it when required -- making sure ID numbers in URLs were integers -- but didn't bother to strip HTML tags from form input. Yikes! This allowed people to include script tags and gather sensitive info from admins. (Needless to say, it's been fixed.)
+
+The PHP code I use [to strip/sanitize input](https://github.com/cloakedcode/snippets/blob/master/strip_html.php) has a couple functions:
+
+<pre class='brush: php'>
+// Converts string to plain text, no tags at all
+$text = html2txt($dangerous_string);
+
+// Strips out harmful tags, leaves markup tags (i.e. <strong>, <a>, etc)
+$text = stackoverflow_strip_tags($dangerous_string);
+</pre>
+
+<script type="text/javascript" src="/js/syntax/shCore.js"></script>
+<script type="text/javascript" src="/js/syntax/shBrushPHP.js"></script>
+
+<script type="text/javascript">
+		SyntaxHighlighter.all();
+</script>
