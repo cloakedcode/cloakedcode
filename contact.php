@@ -24,11 +24,11 @@ if (isset($_POST['send']))
 	 */
 	include('app/strip_html.php');
 
-	$email = html2txt($_POST['email']);
+	$email = Html2txt($_POST['email']);
 	$subject = html2txt($_POST['subject']);
 	$msg = html2txt($_POST['message']);
 
-	mail('alan@cloakedcode.com', $subject, $msg, "From: <{$email}>\r\n");
+	mail('alan@cloakedcode.com', $subject, $msg, "From: {$email}");
 
 	Acorn::renderView('views/sent');
 }
