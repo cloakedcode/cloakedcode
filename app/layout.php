@@ -13,6 +13,8 @@
 	<link href="/css/syntax/shThemeFadeToGrey.css" rel="stylesheet" type="text/css" />
 	
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/CloakedCode" title="Cloaked Code RSS Feed" />
+
+	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +51,6 @@
 	</div>
     <!--<a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/abad93f42020b733148435e2cd92ce15c542d320?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_green_007200.png&path=" alt="Fork me on GitHub"></a>-->
 
-	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
 	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
 	<script type="text/javascript">
