@@ -5,17 +5,8 @@ As the developer behind [AmbitiousLemon](http://ambitiouslemon.com)'s user/hosti
 
 The PHP code I use [to strip/sanitize input](https://github.com/cloakedcode/snippets/blob/master/strip_html.php) has a couple functions:
 
-<pre class='brush: php'>
-// Converts string to plain text, no tags at all
-$text = html2txt($dangerous_string);
-
-// Strips out harmful tags, leaves markup tags (i.e. <strong></strong>, <a></a>, etc)
-$text = stackoverflow_strip_tags($dangerous_string);
-</pre>
-
-<script type="text/javascript" src="/js/syntax/shCore.js"></script>
-<script type="text/javascript" src="/js/syntax/shBrushPhp.js"></script>
-
-<script type="text/javascript">
-		SyntaxHighlighter.all();
-</script>
+    // Converts string to plain text, no tags at all
+    $text = html2txt($dangerous_string);
+    
+    // Strips out harmful tags, leaves markup tags (i.e. <strong></strong>, <a></a>, etc)
+    $text = stackoverflow_strip_tags($dangerous_string);
