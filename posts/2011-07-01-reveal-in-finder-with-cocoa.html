@@ -1,0 +1,20 @@
+title: Reveal in Finder with Cocoa
+
+To answer a question on [Forrst](http://forrst.com), a place that [makes me happy](/2011-02-15-why-forrst-is-more-fun-than-facebook.html), I had to discover how to reveal a folder in the Finder. This type of behavior is seen when you right-click an app icon in the dock and choose *Options -> Reveal in Finder*. It opens the folder that the app is in, usually /Applications, and highlights the app. (Turned out the poster on Forrst just wanted the folder opened, not revealed, oh well.) A little [searching](http://duckduckgo.com) and the solution became apparent:
+
+<pre class='brush: lua'>
+[[NSWorkspace sharedWorkspace] selectFile: folderPath inFileViewerRootedAtPath: nil];
+</pre>
+
+Or for those who are only forward looking (won't support below version 10.6 of OS X):
+
+<pre class='brush: lua'>
+[[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs: [NSArray arrayWithObject: folderURL]];
+</pre>
+
+<script type="text/javascript" src="/js/syntax/shCore.js"></script>
+<script type="text/javascript" src="/js/syntax/shBrushLua.js"></script>
+
+<script type="text/javascript">
+		SyntaxHighlighter.all();
+</script>
