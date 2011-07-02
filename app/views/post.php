@@ -1,7 +1,17 @@
 <h1 class='post-title'><?= $post->title ?></h1>
 <div class='date'>Published on <?= $post->date() ?>.</div>
 
-<div class='post-content'><?= $post->body() ?></div>
+<div class='post-content'>
+    <?= $post->body() ?>
+    <div class='post-links'>
+        <? if ($post->nextPost()) : ?>
+            <a class='next' href='<?= $post->nextPost()->id ?>'>&laquo; <?= $post->nextPost()->title ?></a>
+        <? endif ?>
+        <? if ($post->previousPost()) : ?>
+            <a class='previous' href='<?= $post->previousPost()->id ?>'><?= $post->previousPost()->title ?> &raquo;</a>
+        <? endif ?>
+    </div>
+</div>
 
 <hr/>
 

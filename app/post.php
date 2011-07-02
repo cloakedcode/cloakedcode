@@ -2,6 +2,8 @@
 
 class Post extends AN_Model
 {
+        static $posts = array();
+
 	static function posts()
 	{
 		$posts = array();
@@ -66,6 +68,50 @@ class Post extends AN_Model
 	{
 		return date('F j, Y', $this->date);
 	}
+
+        function url()
+        {
+            return '/'.preg_replace('/-/', '/', $this->id, 3);
+        }
+
+        function previousPost()
+        {
+            if (isset($this->prev) == FALSE)
+            {
+                $posts = $this->_loadPosts();
+                $index = array_search($this->id, $posts) - 1;
+                
+                $this->prev = ($index >= 0 && $index < count($posts)) ? self::_post($posts[$index], FALSE) : FALSE;
+            }
+
+            return $this->prev;
+        }
+
+        function nextPost()
+        {
+            if (isset($this->next) == FALSE)
+            {
+                $posts = $this->_loadPosts();
+                $index = array_search($this->id, $posts) + 1;
+                
+                $this->next = ($index < count($posts)) ? self::_post($posts[$index], FALSE) : FALSE;
+            }
+
+            return $this->next;
+        }
+
+        private function _loadPosts()
+        {
+            if (empty(self::$posts))
+            {
+                foreach (glob('posts/*.html') as $p)
+                {
+                    self::$posts[] = basename($p);
+                }
+            }
+
+            return self::$posts;
+        }
 }
 
 ?>

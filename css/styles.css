@@ -170,6 +170,19 @@ input[type=submit] {
 	margin-top: 15px;
 }
 
+.post-links {
+    padding-bottom: 50px;
+    font-size: 95%;
+}
+
+.post-links .next {
+    float: left;
+}
+
+.post-links .previous {
+    float: right;
+}
+
 pre {
     margin-bottom: 1.3em;
 }
