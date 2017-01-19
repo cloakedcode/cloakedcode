@@ -8,6 +8,7 @@ sleep 2
 
 echo "Index..."
 curl "localhost:8080/index.php" > index.html
+sed -i '' "s|\([src\|href]=[\"']\)/|\1/cloakedcode/|g" index.html
 echo
 
 echo "Pages..."
@@ -15,6 +16,7 @@ for f in pages/*.html; do
     name="$(basename "$f")"
     echo $name
     curl "localhost:8080/index.php?page=${name/.html/}" > $name
+    sed -i '' "s|\([src\|href]=[\"']\)/|\1/cloakedcode/|g" $name
 done
 echo
 
@@ -23,6 +25,7 @@ for f in posts/*.html; do
     name="$(basename "$f")"
     echo $name
     curl "localhost:8080/index.php?id=${name/.html/}" > $name
+    sed -i '' "s|\([src\|href]=[\"']\)/|\1/cloakedcode/|g" $name
 done
 echo
 
