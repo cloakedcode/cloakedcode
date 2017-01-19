@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Cloaked Code | Reveal in Finder with Cocoa 	</title>
+
+	<link href='/css/styles.css' type='text/css' rel='stylesheet' />
+	<link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/prettify.css" />
+	
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/CloakedCode" title="Cloaked Code RSS Feed" />
+
+	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
+        <script type="text/javascript" src="/js/prettify.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                prettyPrint();
+            });
+        </script>
+<script type="text/javascript">var a=new Date; if(18==a.getDate()&&0==a.getMonth()&&2012==a.getFullYear())window.location="http://sopastrike.com/strike";</script>
+</head>
+
+<body>
+	<div id='header'>
+		<div id='logo'>
+			<a href='index.php'><img src='/imgs/logo.png' alt='Cloaked Code' /></a>
+		</div>
+		<div id='nav'>
+			<ul>
+												<li><a href='about.html'>About</a></li>
+								|
+												<li><a href='code.html'>Code</a></li>
+								|
+												<li><a href='contact.html'>Contact</a></li>
+								|
+												<li><a href='portfolio.html'>Portfolio</a></li>
+								|
+												<li><a href='radiobox.html'>RadioBox</a></li>
+								|
+												<li><a href='swingfish.html'>SwingFish</a></li>
+											</ul>
+		</div>
+		<div id='theme'>
+			<a href='#' onclick="document.cookie = 'theme=plain'; document.location.reload();">Plain</a>
+			|
+			<a href='#' onclick="document.cookie = 'theme=dark'; document.location.reload();">Dark</a>
+		</div>
+	</div>
+
+	<div id='content'>
+		<h1 class='post-title'>Reveal in Finder with Cocoa</h1>
+<div class='date'>Published on July 1, 2011.</div>
+
+<div class='post-content'>
+    <p>To answer a question on <a href="http://forrst.com">Forrst</a>, a place that <a href="/2011-02-15-why-forrst-is-more-fun-than-facebook.html">makes me happy</a>, I had to discover how to reveal a folder in the Finder. This type of behavior is seen when you right-click an app icon in the dock and choose <em>Options -> Reveal in Finder</em>. It opens the folder that the app is in, usually /Applications, and highlights the app. (Turned out the poster on Forrst just wanted the folder opened, not revealed, oh well.) A little <a href="http://duckduckgo.com">searching</a> and the solution became apparent:</p>
+
+<div><pre class='prettyprint'>[[NSWorkspace sharedWorkspace] selectFile: folderPath inFileViewerRootedAtPath: nil];
+</pre></div>
+
+<p>Or for those who are only forward looking (won't support below version 10.6 of OS X):</p>
+
+<div><pre class='prettyprint'>[[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs: [NSArray arrayWithObject: folderURL]];
+</pre></div>
+    <div class='post-links'>
+                            <a class='previous' href='2011-04-08-looking-for-a-developer.html'>Looking for a Developer? &raquo;</a>
+            </div>
+</div>
+
+<hr/>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_identifier = '2011-07-01-reveal-in-finder-with-cocoa.html';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://codecabin.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=codecabin">comments powered by Disqus.</a></noscript>
+	</div>
+
+	<div id='footer'>
+		<p>
+			Copyright &copy; 2010 Cloaked Code. <a href="http://feeds.feedburner.com/CloakedCode" title="Subscribe to my RSS feed!"><img src="feed.png" /></a>
+		</p>
+	</div>
+    <!--<a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/abad93f42020b733148435e2cd92ce15c542d320?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_green_007200.png&path=" alt="Fork me on GitHub"></a>-->
+
+	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function() {
+				$('a.fancybox').fancybox({ 'titlePosition' : 'over', 'transitionIn' : 'fade' });
+			});
+ 	</script>
+
+        <script type="text/javascript" charset="utf-8">
+            var is_ssl = ("https:" == document.location.protocol);
+            var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+            document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
+        <script type="text/javascript" charset="utf-8">
+            var feedback_widget_options = {};
+
+            feedback_widget_options.display = "overlay";  
+            feedback_widget_options.company = "cloaked_code";
+            feedback_widget_options.placement = "right";
+            feedback_widget_options.color = "#222";
+            feedback_widget_options.style = "idea";
+
+            var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+        </script>
+
+	<script type="text/javascript">
+		var pkBaseURL = '/tracker/'; //(("https:" == document.location.protocol) ? "/piwik/" : "/piwik/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			try {
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+			piwikTracker.trackPageView();
+		piwikTracker.enableLinkTracking();
+		} catch( err ) {}
+	</script><noscript><p><img src="/tracker/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+	
+</body>
+</html>
+<!--- Page took: 0.057574987411499-->
