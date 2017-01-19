@@ -21,6 +21,7 @@
                 prettyPrint();
             });
         </script>
+<script type="text/javascript">var a=new Date; if(18==a.getDate()&&0==a.getMonth()&&2012==a.getFullYear())window.location="http://sopastrike.com/strike";</script>
 </head>
 
 <body>

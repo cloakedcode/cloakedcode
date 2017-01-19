@@ -7,12 +7,24 @@
 				<language>en</language>
 
 				<item>
+						<title>Version 1.0.4 (4 bug fixes; 2 new features; new icon)</title>
+						<sparkle:releaseNotesLink>
+						http://cloakedcode.com/apps/swingfish/1.0.4.html
+						</sparkle:releaseNotesLink>
+						<pubDate>Sun, 1 Jan 2012 20:20:00 +0000</pubDate>
+						<enclosure url="http://cloakedcode.com/apps/swingfish/swingfish_latest.zip"
+								   sparkle:version="1.0.4"
+								   sparkle:dsaSignature="MCwCFHyxMqE/+mP8mMYsN/8jcsZmXyraAhRhIcx+lDFfG4J6WAlZb9Wr8B4D6A=="
+								   length="911829"
+								   type="application/octet-stream" />
+				</item>
+				<item>
 						<title>Version 1.0.3 (1 bug fix)</title>
 						<sparkle:releaseNotesLink>
 						http://cloakedcode.com/apps/swingfish/1.0.3.html
 						</sparkle:releaseNotesLink>
 						<pubDate>Wed, 27 Apr 2011 9:10:00 +0000</pubDate>
-						<enclosure url="http://cloakedcode.com/apps/swingfish/swingfish_latest.zip"
+						<enclosure url="http://cloakedcode.com/apps/swingfish/swingfish_103.zip"
 								   sparkle:version="1.0.3"
 								   sparkle:dsaSignature="MC0CFBT04JEDTB+cjdE0W4sddC1OauN9AhUAiGpcvj8gVzNYECT3q9RBep6dy4o="
 								   length="451730"
